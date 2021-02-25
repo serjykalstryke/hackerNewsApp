@@ -10,8 +10,10 @@ const Results = () => {
         stories.map((story) => (
           <>
             <a href={story.url}>
-              <h5>{story.title}</h5>
+              <h3>{story.title}</h3>
             </a>
+            <h4>{story.author}</h4>
+            <p>{story.created_at}</p>
             <p>{story.story_text}</p>
           </>
         ))
