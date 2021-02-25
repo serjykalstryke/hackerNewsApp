@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import store from "../../store";
 
 export function Form(props) {
   return <div id="form">{props.children}</div>;
@@ -8,7 +9,7 @@ export function Form(props) {
 export function Input(props) {
   return (
     <div className="form-group">
-      <input className="form-control input" {...props} />
+      <input className="form-control input" {...props} autocomplete="off" />
     </div>
   );
 }
